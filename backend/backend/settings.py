@@ -3,13 +3,16 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+from dotenv import load_dotenv
 
-SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
+load_dotenv()
+
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['89.169.162.189', 'seletach.zapto.org']
-
+# ALLOWED_HOSTS = [os.getenv('IP'), os.getenv('DOMAIN'), 'localhost']
+ALLOWED_HOSTS = ['89.169.162.189', 'seletach123.zapto.org', 'localhost']
 
 # Application definition
 

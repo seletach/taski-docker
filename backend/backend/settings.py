@@ -1,9 +1,10 @@
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -14,7 +15,6 @@ DEBUG = True
 # ALLOWED_HOSTS = [os.getenv('IP'), os.getenv('DOMAIN'), 'localhost']
 ALLOWED_HOSTS = ['89.169.162.189', 'seletach123.zapto.org', 'localhost']
 
-# Application definition
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',

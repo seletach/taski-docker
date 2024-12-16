@@ -85,7 +85,7 @@ jobs:
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
-          tags: seletach/taski_backend:v4
+          tags: seletach/taski_backend:latest
   frontend_tests:
     runs-on: ubuntu-latest
 

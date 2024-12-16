@@ -12,9 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'SECRET_KEY')
 
 DEBUG = True
 
-# ALLOWED_HOSTS = [os.getenv('IP'), os.getenv('DOMAIN'), 'localhost']
-ALLOWED_HOSTS = ['89.169.162.189', 'seletach123.zapto.org', 'localhost']
-
+ALLOWED_HOSTS = [os.getenv('IP'), os.getenv('DOMAIN'), 'localhost']
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
